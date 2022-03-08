@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 
 services:
   backend:
@@ -7,7 +7,7 @@ services:
     build:
       context: ./be_server
       dockerfile: ./Dockerfile
-    image: ""
+    image: "vysakhvnair/erms-server"
     ports:
       - "3010:3010"
   frontend:
@@ -16,6 +16,6 @@ services:
     build:
       context: ./fe_client
       dockerfile: ./Dockerfile
-    image: ""
+    image: "vysakhvnair/erms-client"
     ports:
       - "3005:3005"
