@@ -1,0 +1,30 @@
+@import './global';
+
+.bdDiv {
+    width: 100vw;
+    height: 50vh;
+    @include flexCenter;
+}
+
+#message-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 30vh;
+    border-radius: 25px;
+}
+
+#header-div-404 {
+    display: flex;
+    align-items: center;
+    font-size: $defaultFontSize *2;
+    font-weight: bolder;
+    i {
+        font-size: $defaultFontSize * 1;
+        color: $validationFontColor;
+        font-weight: bolder;
+        align-items: center;
+    }
+}

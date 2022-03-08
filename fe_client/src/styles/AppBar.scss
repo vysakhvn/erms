@@ -1,0 +1,24 @@
+@import "./global";
+
+#appbar {
+    height: 40px;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 5px 5px 5px 10px;
+    display: flex;
+    align-items: center;
+    i {
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.logged-in {
+    justify-content: space-between;
+}
+
+.logged-out {
+    justify-content: center;
+}

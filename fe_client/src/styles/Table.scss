@@ -1,0 +1,32 @@
+@import './global';
+
+table {
+    #list-body {
+        tr{
+            &:hover {
+                cursor: pointer;
+                color: $buttonPrimary;
+            }
+        }
+    }
+}
+
+
+.row-buttons {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0 2px;
+    font-size: $defaultFontSize * 1.2;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    &.btn-edit {
+        color: rgb(23, 23, 126);
+    }
+    &.btn-delete {
+        color: rgb(129, 18, 18);
+    }
+    
+}

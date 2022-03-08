@@ -1,0 +1,21 @@
+version: '1'
+
+services:
+  backend:
+    env_file:
+        "./be_server/.env"
+    build:
+      context: ./be_server
+      dockerfile: ./Dockerfile
+    image: ""
+    ports:
+      - "3010:3010"
+  frontend:
+    env_file:
+        "./fe_client/.env"
+    build:
+      context: ./fe_client
+      dockerfile: ./Dockerfile
+    image: ""
+    ports:
+      - "3005:3005"

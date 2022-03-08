@@ -1,0 +1,62 @@
+@import './global';
+
+#login-container {
+    margin-top: 10vh;
+    @include flexCenter;
+}
+
+.card-panel {
+    header {
+        width: 100%;
+        border-radius: 4px 4px 4px 4px;
+        font-weight: bolder;
+        text-align: center;
+        padding: 4px 0px 4px 0px;
+        margin-bottom: 14px;
+    }
+}
+
+#form-container-login {
+    min-width: 40%;
+}
+
+#signin-form {
+    p {
+        font-size: $validationFontSize;
+        color: $validationFontColor;
+        margin-top: 0;
+    }
+}
+
+
+.link-signin {
+    display: flex;
+    justify-content: center;
+    font-size: $validationFontSize;
+    padding: 10px;
+    button {
+        display: inline;
+        border: 0;
+        background-color: transparent;
+        font-size: $defaultFontSize;
+        color: blue;
+        padding-left: 0;
+        text-decoration: underline blue;
+        &:hover { 
+            cursor: pointer;
+        }
+    }
+}
+
+#signin-failed-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: $validationFontColor;
+    border-radius: 4px;
+    border: $validationFontColor solid 1px;
+    width: 30vw;
+    text-align: center;
+    padding: 3px;
+}

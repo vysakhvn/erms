@@ -1,0 +1,39 @@
+@import './global.scss';
+
+.bgoverlay {
+    @include flexCenter;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: $maxZindex - 1;
+    background: rgba(0,0,0,0.7);
+
+    .title {
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: $defaultFontSize;
+    }
+
+    .content{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label {
+            font-weight: bolder;
+            font-size: $defaultFontSize;
+        }
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

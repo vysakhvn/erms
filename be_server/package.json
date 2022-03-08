@@ -1,0 +1,37 @@
+{
+  "name": "employee-records-backend",
+  "version": "1.0.0",
+  "description": "Backend for Employee Records Management System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vysakh V Nair",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.5.0",
+    "bcrypt": "^5.0.1",
+    "celebrate": "^15.0.0",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "prisma": "^3.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 1000,
+    "env": {
+      "PORT": 3010
+    }
+  }
+}

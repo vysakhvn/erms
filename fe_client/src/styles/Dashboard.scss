@@ -1,0 +1,9 @@
+@import './global';
+
+#dashboard-container {
+    display: flex;
+    justify-content:baseline;
+    #left-panel {
+        @include screen-max($screen-md){display: none;}
+    }
+}
