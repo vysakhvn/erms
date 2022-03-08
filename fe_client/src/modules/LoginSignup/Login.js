@@ -36,7 +36,6 @@ const LoginModule = ({loggedIn}) => {
     const loginBtnClick = async (data) => {
         if (data.username && data.password) {
                 const result = await userLogin(data);
-                console.log(result);
 
                 if (result.err) {
                     setIsError(true);

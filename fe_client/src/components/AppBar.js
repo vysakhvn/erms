@@ -6,7 +6,6 @@ const AppBar = ({isVisible, logout}) => {
 
     const handleClick =() => {
         logout(); 
-        console.log(navigation.current);
         navigation.current('/');
     }
 

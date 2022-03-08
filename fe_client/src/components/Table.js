@@ -32,7 +32,7 @@ const Table = ({employeeList, userAction, filterList}) => {
         return () => {
             debouncedFilterHandler.cancel();
         }
-      }, [id, name, email, address, age, mobile, debouncedFilterHandler]);
+      }, [id, name, email, address, age, mobile]);
 
     return (
         <>
